@@ -23,9 +23,12 @@
                 margin-left: auto;
                 margin-right: auto;
                 text-align: center;
+            }
 
-
-
+            .formulario {
+                border-style: dashed;
+                border-color: white;
+                position: relative;
             }
         </style>
     </HEAD>
@@ -67,8 +70,25 @@
 
 
         </tbody>
-    </table>
 
+    </table>
+    <br>
+    <div class="formulario">
+        <p style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; font-size: large;"> Contactos
+        </p>
+        <form>
+            <p>Tipo de Documento</p>
+            <select name="NroDoc">
+                <option>CI</option>
+                <option>RUC</option>
+                <option>DNI</option>
+            </select>
+            <input type="number" name="NroDoc">
+            <p>Nombre</p><input type="text" name="Nombre">
+            <p>Apellido</p><input type="text" name="Apellido">
+            <p>Correo</p><input type="email" name="Correo">
+        </form>
+    </div>
 
 </body>
 
