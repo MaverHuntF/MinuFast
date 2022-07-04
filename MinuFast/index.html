@@ -1,119 +1,268 @@
-<HTML>
-
-<HEAD>
-  <style>
-    body {
-      color: black;
-      background-image: url("./IMG/depositphotos_48690405-stock-illustration-fast-food-pattern.jpg");
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
-    }
-
-    .cabecera {
-      text-align: center;
-    }
-
-    .principal {
-
-      font-family: Georgia, 'Times New Roman', Times, serif;
-      width: 25%;
-      margin-left: auto;
-      margin-right: auto;
-      text-align: center;
-    }
-  </style>
-</HEAD>
-<title>
-  Minu Fast
-</title>
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>MinuFast&copy;</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" />
+    <!-- Google Fonts Roboto -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" />
+    <!-- MDB -->
+    <link rel="stylesheet" href="css/mdb.min.css" />
+    <!-- Custom styles -->
+    <link rel="stylesheet" href="css/style.css" />
+</head>
 <body>
-  <div class="cabecera">
+      <!--Main Navigation-->
+  <header>
+    <style>
+      /* Carousel styling */
+      #introCarousel,
+      .carousel-inner,
+      .carousel-item,
+      .carousel-item.active {
+        height: 100vh;
+      }
 
-    <p style="font-size:50px;"><b><u>MINU FAST</u></b></p>
-    <p>
-    <h2><i> "Comida para el Alma..." </i> </h2>
-    </p>
-<br>
-<table class="principal">
+      .carousel-item:nth-child(1) {
+        background-image: url('./img/foto1.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+      }
 
-  <tr>
-    <td><a href="nosotros.html"><img src="./img/nosotros.png" width="50" height="50"> </a></td>
-    <td><a href="contacto.html"><img src="./IMG/contactos.png" width="50" height="50"> </a></td>
-  </tr>
+      .carousel-item:nth-child(2) {
+        background-image: url('./img/foto2.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+      }
 
-</table>
-  </div>
+      .carousel-item:nth-child(3) {
+        background-image: url('./img/foto3.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+      }
 
-  <hr width="70%" color="red">
-  <br>
-  <div class="principal">
-    <h2> Menu Minutas</h2>
-    <p>
-    <h4> Sandwich de Milanesa de Carne o Pollo.....6.000 GS.</h4>
-    </p>
-    <ul>
-      <li>Pan</li>
-      <li>Mayonesa</li>
-      <li>Lechuga</li>
-      <li>Tomate</li>
-      <li>Huevo</li>
-      <li>Carne o Pollo</li>
-      <li>Queso Muzzarella</li>
-      <li>Jamon Cocido</li>
-    </ul>
-    <p>
-    <h4>Sandwich de verduras....7.000 GS.</h4>
-    </p>
-    <ul>
-      <li>Pan Ciabatta</li>
-      <li>Mayonesa</li>
-      <li>Lechuga</li>
-      <li>Tomate</li>
-      <li>Huevo Duro en rodajas</li>
-      <li>Queso Parmesano</li>
-    </ul>
-    <p>
-    <h4>Empanadas....3.000 GS.</h4>
-    </p>
-    <ul>
-      <li>Carne</li>
-      <li>Pollo</li>
-      <li>Jamon & Queso</li>
-      <li>Choclo</li>
-      <li>Vegetariana</li>
-      <li>Napolitana</li>
-      <li>Chilena</li>
-    </ul>
-    <p>
-    <h4>Pizzeta's...10.000 GS.</h4>
-    </p>
-    <ul>
-      <p>
-      <h5>4 porciones</h5>
-      </p>
-      <li>Muzzarella</li>
-      <li>Pollo con Katupiry</li>
-      <li>Pepperoni</li>
-      <li>Choclo</li>
-      <li>Vegetariana</li>
-      <li>Napolitana</li>
-      <li>Mexicana Picante</li>
-    </ul>    
-  </div>
-<ul type = “square”>
+      /* Height for devices larger than 576px */
+      @media (min-width: 992px) {
+        #introCarousel {
+          margin-top: -58.59px;
+        }
+      }
+
+      .navbar .nav-link {
+        color: #fff !important;
+      }
+    </style>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark d-none d-lg-block" style="z-index: 2000;">
+      <div class="container-fluid">
+        <!-- Navbar brand -->
+        <a class="navbar-brand nav-link" target="_blank" href="https://mdbootstrap.com/docs/standard/">
+          <strong>MinuFast</strong>
+        </a>
+        <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarExample01"
+          aria-controls="navbarExample01" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarExample01">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item active">
+              <a class="nav-link" aria-current="page" href="#intro">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="nosotros.html" rel="nofollow"
+                >Nosotros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contacto.html" target="_blank">Contactos</a>
+            </li>
+          </ul> 
+        </div>
+      </div>
+    </nav>
+    <!-- Navbar -->
+
+    <!-- Carousel wrapper -->
+    <div id="introCarousel" class="carousel slide carousel-fade shadow-2-strong" data-mdb-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-mdb-target="#introCarousel" data-mdb-slide-to="0" class="active"></li>
+        <li data-mdb-target="#introCarousel" data-mdb-slide-to="1"></li>
+        <li data-mdb-target="#introCarousel" data-mdb-slide-to="2"></li>
+      </ol>
+
+      <!-- Inner -->
+      <div class="carousel-inner">
+        <!-- Single item -->
+        <div class="carousel-item active">
+          <div class="mask" style="background-color: rgba(0, 0, 0, 0.6);">
+            <div class="d-flex justify-content-center align-items-center h-100">
+              <div class="text-white text-center">
+                <a class="btn btn-outline-light btn-lg m-2" href="https://www.pedidosya.com.py/"
+                  role="button" rel="nofollow" target="_blank">Tengo Hambre</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Single item -->
+        <div class="carousel-item">
+          <div class="mask" style="background-color: rgba(0, 0, 0, 0.3);">
+            <div class="d-flex justify-content-center align-items-center h-100">
+              <div class="text-white text-center">
+                <h2>Trabajamos con los mejores distribuidores de materia prima.</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Single item -->
+        <div class="carousel-item">
+          <div class="mask" style="
+                background: linear-gradient(
+                  45deg,
+                  rgba(29, 236, 197, 0.7),
+                  rgba(91, 14, 214, 0.7) 100%
+                );
+              ">
+            <div class="d-flex justify-content-center align-items-center h-100">
+              <div class="text-white text-center">
+                <h2>¿Sed?</h2>
+                <a class="btn btn-outline-light btn-lg m-2"
+                  href="https://mdbootstrap.com/docs/standard/content-styles/masks/" target="_blank" role="button">Si. Soy mayor de edad!</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Inner -->
+
+      <!-- Controls -->
+      <a class="carousel-control-prev" href="#introCarousel" role="button" data-mdb-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#introCarousel" role="button" data-mdb-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+    <!-- Carousel wrapper -->
+  </header>
+  <!--Main Navigation-->
+
+  <!--Main layout-->
+  <main class="mt-5">
+    <div class="container">
+      <!--Section: Content-->
+      <section>
+        <div class="row">
+          <div class="col-md-6 gx-5 mb-4">
+            <div class="bg-image hover-overlay ripple shadow-2-strong" data-mdb-ripple-color="light">
+              <img src="./img/promo1.png" class="img-fluid" />
+              <a href="#!">
+                <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-md-6 gx-5 mb-4">
+            <h4><strong>2x1 Hamburguesa Light. Con todos los medios de pago.</strong></h4>
+            <p class="text-muted">
+              Con carne 100% vacuna, panes tostados, cebolla salteada y shh, una salsa secreta c:
+            </p>
+            <p><strong>Por solo Gs. 10.000 + te llevas la combo.</strong></p>
+            <p class="text-muted">
+              Papas rusticas y productos Coca Cola &copy;
+            </p>
+          </div>
+        </div>
+      </section>
+      <!--Section: Content-->
+
+      <hr class="my-5" />
+
+      <!--Section: Content-->
+      <section class="text-center">
+        <h4 class="mb-5"><strong>La olla nutricional paraguaya!</strong></h4>
+
+        <div class="row">
+          <div class="col-lg-4 col-md-12 mb-4">
+            <div class="card">
+              <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                <img src="./img/comida1.jpg" class="img-fluid" width="400" height="400"/>
+                <a href="#!">
+                  <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                </a>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Empanadas</h5>
+                <p class="card-text">
+                  Carne, Pollo, JyQ, Choclo, Chilena, Napolitana, Mexicana(+18), y muchos +
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card">
+              <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                <img src="./img/comida2.jpg" class="img-fluid" width="400" height="400"/>
+                <a href="#!">
+                  <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                </a>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Pizza</h5>
+                <p class="card-text">
+                  No creo que sea necesario describir los sabores de la pizza, solo sé que tenes que probarlas todas.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card">
+              <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                <img src="./img/comida3.jpg" class="img-fluid"width="400" height="400" />
+                <a href="#!">
+                  <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                </a>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Milanguiche de Sanguinesa</h5>
+                <p class="card-text">
+                  Aprobado por Homero!.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--Section: Content-->
+
+      <hr class="my-5" />
+    </div>
+  </main>
+  <!--Main layout-->
 
 
-
-<p>&copy FFGBG - 2022</p>
-
-
-
-
-
-
-
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      FB / JA
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!--Footer-->
+    <!-- MDB -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+    <!-- Custom scripts -->
+    <script type="text/javascript" src="js/script.js"></script>
 </body>
-
-</HTML>
+</html>
