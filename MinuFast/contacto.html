@@ -13,10 +13,6 @@
     <link rel="stylesheet" href="css/mdb.min.css" />
     <!-- Custom styles -->
     <link rel="stylesheet" href="css/style.css" />
-</head>
-<body>
-      <!--Main Navigation-->
-  <header>
     <style>
       /* Carousel styling */
       #introCarousel,
@@ -27,21 +23,21 @@
       }
 
       .carousel-item:nth-child(1) {
-        background-image: url('https://mdbootstrap.com/img/Photos/Others/images/76.jpg');
+        background-image: url('./img/foto1.jpg');
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center center;
       }
 
       .carousel-item:nth-child(2) {
-        background-image: url('https://mdbootstrap.com/img/Photos/Others/images/77.jpg');
+        background-image: url('./img/foto2.jpg');
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center center;
       }
 
       .carousel-item:nth-child(3) {
-        background-image: url('https://mdbootstrap.com/img/Photos/Others/images/78.jpg');
+        background-image: url('./img/foto3.jpg');
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center center;
@@ -55,10 +51,42 @@
       }
 
       .navbar .nav-link {
-        color: #fff !important;
+        color: rgb(0, 0, 0) !important;
       }
     </style>
-
+</head>
+<body>
+   <!-- Navbar -->
+   <nav class="navbar navbar-expand-lg navbar-dark d-none d-lg-block" style="z-index: 2000;">
+    <div class="container-fluid">
+      <!-- Navbar brand -->
+      <a class="navbar-brand nav-link" target="_blank" href="https://mdbootstrap.com/docs/standard/">
+        <strong>MinuFast</strong>
+      </a>
+      <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarExample01"
+        aria-controls="navbarExample01" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarExample01">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item active">
+            <a class="nav-link" aria-current="page" href="index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="nosotros.html" rel="nofollow"
+              >Nosotros</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contacto.html" target="_blank">Contactos</a>
+          </li>
+        </ul> 
+      </div>
+    </div>
+  </nav>
+  <!-- Navbar -->
+      <!--Main Navigation-->
+  <header>
+  
   <!--Main layout-->
   <main class="mt-5">
     <div class="container">
@@ -87,6 +115,12 @@
                     <label class="form-label" for="form3Example2">Apellido</label>
                   </div>
                 </div>
+                <div class="col">
+                  <div class="form-outline">
+                    <input type="tel" id="form3Example2" class="form-control" name="Numero"/>
+                    <label class="form-label" for="form3Example2">Numero de Telefono</label>
+                  </div>
+                </div>
               </div>
 
               <!-- Email input -->
@@ -101,6 +135,7 @@
               </button>
 
             </form>
+            <img src="./img/logo_gif.gif" width="98%" alt="logo_gif">
           </div>
         </div>
       </section>
